@@ -586,53 +586,8 @@ namespace HtmlToPdfLib
 
             if (!String.IsNullOrEmpty(path) && (extension == ".htm" | extension == ".html"))
             {
-
-
-//                try
-//                {
-
-
-
-                    ////////
-//                    string dirtyHtml = FixHtmlFile(path, counter, str);
-//                    string cleanHtml = "";
-
-                
-
-                //cleanHtml = PrepareTidyHtml(dirtyHtml);
-    /*                    using (TidyManaged.Document docHtmlQWERTY = TidyManaged.Document.FromString(dirtyHtml))
-                {
-    //                        docHtml.OutputBodyOnly = AutoBool.Yes;
-    //                        docHtml.Quiet = true;
-    //                        docHtml.CleanAndRepair();
-    //                        cleanHtml = docHtml.Save();
-
-                    //Encoding srcEncoding = Encoding.GetEncoding(dirtyHtml);
-    //                        byte[] srcEncodingBytes = srcEncoding.GetBytes(dirtyHtml);
-    //                        Encoding destEncoding = Encoding.UTF8;
-    //                        byte[] destEncodingBytes = Encoding.Convert(srcEncoding, destEncoding, srcEncodingBytes);
-    //                        var strStream = new MemoryStream(destEncodingBytes);
-
-                    byte[] bytes = Encoding.Default.GetBytes(dirtyHtml);
-                    byte[] destEncodingBytes = Encoding.Convert(Encoding.Default, Encoding.UTF8, bytes);
-                    dirtyHtml = System.Text.Encoding.UTF8.GetString(destEncodingBytes);
-                    var strStream = new MemoryStream(destEncodingBytes);
-
-                    //do the parsing
-                    var docHtml = TidyManaged.Document.FromStream(strStream);
-                    docHtml.InputCharacterEncoding = TidyManaged.EncodingType.Utf8;
-                    docHtml.OutputCharacterEncoding = TidyManaged.EncodingType.Utf8;
-                    docHtml.CharacterEncoding = TidyManaged.EncodingType.Utf8;
-                    docHtml.ShowWarnings = false;
-                    docHtml.Quiet = true;
-                    docHtml.OutputXhtml = true;
-                    docHtml.CleanAndRepair();
-                    cleanHtml = docHtml.Save();
-                }*/
-
                 string cleanHtml = FixHtmlFile(path, counter, str);
                 string css = File.ReadAllText(fileNameCss);
-
 
                 var msCss = new MemoryStream(System.Text.Encoding.UTF8.GetBytes(css));
                 var msHtml = new MemoryStream(System.Text.Encoding.UTF8.GetBytes(cleanHtml));
@@ -645,72 +600,6 @@ namespace HtmlToPdfLib
 
                 XMLWorkerHelper.GetInstance().ParseXHtml(writer, doc, msHtml, msCss, Encoding.UTF8, fontProvider);
 
-
-/*                var cssRsolver = XMLWorkerHelper.GetInstance().GetDefaultCssResolver(true);
-                HtmlPipelineContext htmlContext = new HtmlPipelineContext(null);
-                htmlContext.SetTagFactory(Tags.GetHtmlTagProcessorFactory());
-                htmlContext.SetImageProvider( );*/
-
-
-                /////////////
-
-                /*XMLWorkerFontProvider fontProvider = new XMLWorkerFontProvider(XMLWorkerFontProvider.DONTLOOKFORFONTS);
-                    fontProvider.Register(inputFont);
-                    FontFactory.FontImp = fontProvider;
-
-                    CssAppliers cssAppliers = new CssAppliersImpl(fontProvider);
-
-                    HtmlPipelineContext htmlContext = new HtmlPipelineContext(cssAppliers);
-
-                    htmlContext.SetTagFactory(Tags.GetHtmlTagProcessorFactory());
-
-                    ICSSResolver cssResolver = XMLWorkerHelper.GetInstance().GetDefaultCssResolver(true);
-
-                    IPipeline pipeline = new CssResolverPipeline(cssResolver, new HtmlPipeline(htmlContext, new PdfWriterPipeline(doc, writer)));
-
-                    XMLWorker worker = new XMLWorker(pipeline, true);
-
-                    XMLParser p = new XMLParser(true, worker, Encoding.UTF8);
-
-                    TextReader reader = new StringReader(cleanHtml);
-
-                    p.Parse(reader);
-
-                    p.Flush();*/
-
-
-
-
-
-
-                /////////
-//                    worker.StartDocument();
-//                    worker.Parse(new StringReader(FixHtmlFile(path, counter, str)));
-
-
-
-
-
-//                }
-//                catch (Exception ex)
-//                {
-//                    Chunk dl = new Chunk(new iTextSharp.text.pdf.draw.DottedLineSeparator());
-//                    doc.Add(dl);
-//                    doc.Add(new Paragraph(ex.Message, font_14));
-//                    doc.Add(dl);
-//                }
-
-
-
-
-
-
-//                finally
-//                {
-//                    worker.EndDocument();
-//                    worker.Close();
-//                    doc.NewPage();
-//                }
             }
             else if (extension == ".jpg")
             {
@@ -742,10 +631,6 @@ namespace HtmlToPdfLib
             HtmlDocument doc = new HtmlDocument();
             string content = "";
 
-
-//            if ((htmlPath == ("Data\\" + "Frames/Ru/MIG-000085544.htm"))) //|| (htmlPath == ("Data\\" + "Frames/Ru/MIG-000085662.htm")))//debug if
-//            {
-
             //read html
             try
             {
@@ -772,27 +657,20 @@ namespace HtmlToPdfLib
 
             var patternST1 = @"(</?st1\b?.*?>)";
             var patternO_P = @"(<)(/?)(o:p)\b?.*?(>)";
-//            var patternLI = @"(<li>)(<div>)(.*?)(</div>)(</li>)";
+
 
             var replacementST1 = "";
             var replacementO_P = "$1p$4";
-//            var replacementLi = "$1$3$5";
-            //Regex regexST = new Regex(patternST1);
-            //Match match = regex.Match(doc.DocumentNode.OuterHtml);
+
 
             content = Regex.Replace(content, patternST1, replacementST1);
             content = Regex.Replace(content, patternO_P, replacementO_P);
-//            content = Regex.Replace(content, patternLI, replacementLi);////////
-            //            content = Regex.Replace(content, pattern1, replacement);
-            //            content = Regex.Replace(content, pattern2, replacement);
-            //                }
+
 
             var cleanupContent = PrepareTidyHtml(content);
             content = cleanupContent;
 
             doc.LoadHtml(content);
-
-            //            }//////////?
 
 
             HtmlNode nodeBody = doc.DocumentNode.SelectSingleNode("//body");
@@ -863,9 +741,6 @@ namespace HtmlToPdfLib
             {
                 string textOfImg = locXmlParser.GetLocalization("img") + " " + str + counterOfChapter;
                 var tmpNode = AddPicture(nodeBody, doc, textOfImg);
-
-
-                //nodeBody.Attributes.RemoveAll();
             }
             if (nodeCollectionImg != null)
             {
@@ -880,7 +755,6 @@ namespace HtmlToPdfLib
                         var uri = new System.Uri(tmpPath);
                         var convertedURI = uri.AbsoluteUri;
 
-                        //htmlNode.Attributes["path"].Value = Path.GetFullPath(tmpPath);
                         htmlNode.SetAttributeValue("src", convertedURI);
                         htmlNode.Attributes["path"].Remove();
 
@@ -986,69 +860,6 @@ namespace HtmlToPdfLib
                 }
             }
 
-
-//            var nodeCollectiondivH3 = doc.DocumentNode.SelectNodes("//div[@class='divH3']");
-//            if (nodeCollectiondivH3 != null)
-//            {
-//                foreach (var htmlNode in nodeCollectiondivH3)
-//                {
-//                    var parent = htmlNode.ParentNode;
-//
-//                    for (int i = 0; i < parent.ChildNodes.Count; i++)
-//                    {
-//
-//                        var child = parent.ChildNodes[i];
-//                        if (child.Name == htmlNode.Name && child.Attributes["divH3"] != null)
-//                        {
-//
-//                            var tmpChild =  parent.ChildNodes[i + 1];
-//                            if (tmpChild.Name == "ul")
-//                            {
-//                                var childUl = tmpChild;
-//
-//                                var divNode = doc.CreateElement("div");
-//                                divNode.SetAttributeValue("class", "list-block");
-//
-//                                divNode.AppendChild(htmlNode);
-//                                divNode.AppendChild(childUl);
-//
-//                                parent.ReplaceChild(divNode, htmlNode);
-//                                childUl.Remove();
-//
-//
-//
-//                            }
-//                        }
-//                    }
-//
-//                }
-//            }
-
-//            var nodeCollectionUl = doc.DocumentNode.SelectSingleNode("//ul");
-
-            //HtmlNodeCollection nodeCollectionUl = doc.DocumentNode.SelectNodes("//ul");
-
-            //if (nodeCollectionUl != null)
-            //{
-            //    foreach (var htmlNode in nodeCollectionUl)
-            //    {
-            //        HtmlNode divNode = doc.CreateElement("div");
-            //        divNode.SetAttributeValue("class", "list-block");
-
-
-
-            //        //HtmlNode tmpList = doc.CreateElement("ul");
-
-            //        //tmpList.InnerHtml = htmlNode.InnerHtml;
-
-            //        //divNode.AppendChild(tmpList);//htmlNode.Clone());
-
-            //        //node.ParentNode.ReplaceChild(divNode, htmlNode);
-            //    }
-            //}
-
-//            }//debug if
-
             SaveHTML(doc, Path.GetFileName(htmlPath));//debug save fixed html
 
             var tmpHtml =  PrepareTidyHtml(doc.DocumentNode.OuterHtml);
@@ -1151,23 +962,12 @@ namespace HtmlToPdfLib
 
                 tmpPath = tmpPath.Replace(@"/", @"\");
 
-                //tmpPath = System.Web.HttpContext.Current.Server.MapPath(tmpPath);
-//                System.Web.Hosting.HostingEnvironment.MapPath(tmpPath);
-
-               
-
-
             }
 
             string tmpTextTag = htmlNode.InnerText + " (" + textImg + ")";
 
             if (!String.IsNullOrEmpty(tmpPath) && File.Exists(tmpPath))
             {
-                //tmpPath = Path.GetFullPath(tmpPath);
-                //tmpPath = tmpPath.Replace(" ", "%20");
-
-                //tmpPath = System.Web.Hosting.HostingEnvironment.MapPath(tmpPath);
-
                 var uri = new System.Uri(tmpPath);
                 var convertedURI = uri.AbsoluteUri;
 
@@ -1346,15 +1146,4 @@ namespace HtmlToPdfLib
 
         }
     }
-
-
-
-//    public class MyImageFactory : iTextSharp.text.html.simpleparser.IImageProvider
-//    {
-//        iTextSharp.text.Image iTextSharp.text.html.simpleparser.IImageProvider.GetImage(string src, IDictionary<string, string> attrs, ChainedProperties chain, IDocListener doc)
-//        {
-//            return iTextSharp.text.Image.GetInstance(src);
-//        }
-//    }
-
 }
