@@ -1,0 +1,835 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="livetemplates.csharp.usevar">True</setting>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="document" priority="7" />
+      <Item value="private" priority="22" />
+      <Item value="void" priority="20" />
+      <Item value="Document`0" priority="5" />
+      <Item value="PdfWriter`0" priority="1" />
+      <Item value="int" priority="22" />
+      <Item value="new" priority="56" />
+      <Item value="Document" priority="0" />
+      <Item value="doc" priority="30" />
+      <Item value="string" priority="72" />
+      <Item value="xmlNode" priority="1" />
+      <Item value="null" priority="23" />
+      <Item value="Process`0" priority="3" />
+      <Item value="StyleSheet`0" priority="1" />
+      <Item value="using" priority="7" />
+      <Item value="iTextSharp" priority="2" />
+      <Item value="CssResolverPipeline`0" priority="2" />
+      <Item value="tool.xml" priority="0" />
+      <Item value="CSSResolver`0" priority="0" />
+      <Item value="this" priority="3" />
+      <Item value="XMLWorkerHelper" priority="0" />
+      <Item value="Paragraph`0" priority="7" />
+      <Item value="MemoryStream`0" priority="2" />
+      <Item value="MemoryStream" priority="0" />
+      <Item value="StreamReader`0" priority="0" />
+      <Item value="var" priority="51" />
+      <Item value="System" priority="8" />
+      <Item value="IO" priority="2" />
+      <Item value="Stream`0" priority="0" />
+      <Item value="FileStream`0" priority="5" />
+      <Item value="FileStream" priority="1" />
+      <Item value="Open" priority="1" />
+      <Item value="FileMode`0" priority="0" />
+      <Item value="XMLWorkerFontProvider`0" priority="3" />
+      <Item value="fontProvider" priority="8" />
+      <Item value="XMLWorkerFontProvider" priority="1" />
+      <Item value="cssAppliers" priority="0" />
+      <Item value="CssAppliersImpl`0" priority="0" />
+      <Item value="css" priority="0" />
+      <Item value="ICSSResolver`0" priority="3" />
+      <Item value="cssResolver" priority="2" />
+      <Item value="ResolveEventArgs`0" priority="0" />
+      <Item value="fileCSS" priority="1" />
+      <Item value="true" priority="13" />
+      <Item value="worker" priority="2" />
+      <Item value="if" priority="43" />
+      <Item value="TextReader`0" priority="9" />
+      <Item value="p" priority="0" />
+      <Item value="foreach" priority="22" />
+      <Item value="in" priority="0" />
+      <Item value="arial" priority="1" />
+      <Item value="charset" priority="0" />
+      <Item value="fileHTMLtest" priority="0" />
+      <Item value="Encoding`0" priority="7" />
+      <Item value="fileHTML" priority="0" />
+      <Item value="Regex" priority="0" />
+      <Item value="pattern" priority="2" />
+      <Item value="input" priority="1" />
+      <Item value="Regex`0" priority="0" />
+      <Item value="replacement" priority="0" />
+      <Item value="text" priority="4" />
+      <Item value="fsHtml" priority="0" />
+      <Item value="File`0" priority="11" />
+      <Item value="String`0" priority="7" />
+      <Item value="textReader" priority="0" />
+      <Item value="htmlText" priority="1" />
+      <Item value="path" priority="3" />
+      <Item value="worker1" priority="0" />
+      <Item value="content" priority="2" />
+      <Item value="return" priority="22" />
+      <Item value="m" priority="2" />
+      <Item value="Group`0" priority="0" />
+      <Item value="table" priority="0" />
+      <Item value="border" priority="0" />
+      <Item value="fontBold18" priority="1" />
+      <Item value="font14" priority="1" />
+      <Item value="tocPage" priority="3" />
+      <Item value="false" priority="11" />
+      <Item value="StringTrimming`0" priority="0" />
+      <Item value="hDoc" priority="0" />
+      <Item value="htmlPath" priority="0" />
+      <Item value="nodeCollection" priority="10" />
+      <Item value="IDictionary" priority="0" />
+      <Item value="Dictionary" priority="7" />
+      <Item value="Dictionary&lt;int,string&gt;" priority="0" />
+      <Item value="i" priority="19" />
+      <Item value="picteres" priority="0" />
+      <Item value="el" priority="3" />
+      <Item value="fileHTML_MIG_000072604" priority="2" />
+      <Item value="ImgContent`0" priority="3" />
+      <Item value="Path" priority="0" />
+      <Item value="Text" priority="1" />
+      <Item value="public" priority="38" />
+      <Item value="class" priority="0" />
+      <Item value="Path`0" priority="3" />
+      <Item value="ImgContent" priority="0" />
+      <Item value="HtmlNodeCollection`0" priority="6" />
+      <Item value="node" priority="33" />
+      <Item value="parent" priority="6" />
+      <Item value="while" priority="0" />
+      <Item value="case" priority="6" />
+      <Item value="break" priority="11" />
+      <Item value="HtmlNode`0" priority="15" />
+      <Item value="HtmlNode" priority="8" />
+      <Item value="HtmlNodeType`0" priority="1" />
+      <Item value="imgNode" priority="4" />
+      <Item value="sr1" priority="0" />
+      <Item value="StringReader`0" priority="1" />
+      <Item value="Directory`0" priority="2" />
+      <Item value="Application`0" priority="0" />
+      <Item value="fileHTMLTest" priority="0" />
+      <Item value="FixHtmlFile`0" priority="0" />
+      <Item value="divNode" priority="7" />
+      <Item value="index" priority="0" />
+      <Item value="pNode" priority="4" />
+      <Item value="catch" priority="4" />
+      <Item value="Net" priority="1" />
+      <Item value="WebException`0" priority="1" />
+      <Item value="Chunk`0" priority="6" />
+      <Item value="baseFont" priority="1" />
+      <Item value="Font`0" priority="0" />
+      <Item value="BackColor" priority="0" />
+      <Item value="Color`0" priority="0" />
+      <Item value="textBox2" priority="1" />
+      <Item value="label1" priority="4" />
+      <Item value="timer1" priority="3" />
+      <Item value="TabPage`0" priority="0" />
+      <Item value="Attribute`0" priority="0" />
+      <Item value="PrepareHtmlForPdf`0" priority="0" />
+      <Item value="nodeCollectionTable" priority="0" />
+      <Item value="Border3DSide`0" priority="0" />
+      <Item value="Console`0" priority="5" />
+      <Item value="ex" priority="2" />
+      <Item value="dictionary" priority="0" />
+      <Item value="NewLineHandling`0" priority="1" />
+      <Item value="KeyValuePair" priority="4" />
+      <Item value="dictionaryImg" priority="0" />
+      <Item value="counterOfImg" priority="0" />
+      <Item value="List" priority="3" />
+      <Item value="List&lt;HtmlNode&gt;" priority="0" />
+      <Item value="for" priority="11" />
+      <Item value="listImg" priority="1" />
+      <Item value="Exception`0" priority="8" />
+      <Item value="finally" priority="1" />
+      <Item value="StringFormat`0" priority="0" />
+      <Item value="const" priority="2" />
+      <Item value="struct" priority="3" />
+      <Item value="ParentOfNodes`0" priority="0" />
+      <Item value="ParentOfNodes" priority="0" />
+      <Item value="Thread`0" priority="1" />
+      <Item value="Thread" priority="0" />
+      <Item value="EventHandler`0" priority="0" />
+      <Item value="timer1_Tick`0" priority="0" />
+      <Item value="Form`0" priority="3" />
+      <Item value="Action`0" priority="1" />
+      <Item value="delegate" priority="2" />
+      <Item value="timerForm" priority="9" />
+      <Item value="Form" priority="0" />
+      <Item value="ThreadStart`0" priority="1" />
+      <Item value="Label`0" priority="1" />
+      <Item value="timerLable" priority="0" />
+      <Item value="Label" priority="0" />
+      <Item value="_splashThread" priority="0" />
+      <Item value="TimerForm`0" priority="4" />
+      <Item value="sec" priority="0" />
+      <Item value="EventHandler" priority="0" />
+      <Item value="timer1_tick" priority="0" />
+      <Item value="static" priority="1" />
+      <Item value="button1" priority="2" />
+      <Item value="event" priority="1" />
+      <Item value="MethodOfTimer`0" priority="0" />
+      <Item value="else" priority="14" />
+      <Item value="brNode" priority="0" />
+      <Item value="tmpTextTag" priority="2" />
+      <Item value="spanNode" priority="1" />
+      <Item value="Font" priority="2" />
+      <Item value="switch" priority="2" />
+      <Item value="CanSelect" priority="2" />
+      <Item value="chunk" priority="0" />
+      <Item value="img" priority="2" />
+      <Item value="pageEndToc" priority="0" />
+      <Item value="pagestartToc" priority="0" />
+      <Item value="fontBold_18" priority="2" />
+      <Item value="out" priority="0" />
+      <Item value="HTMLWorker`0" priority="0" />
+      <Item value="counter" priority="3" />
+      <Item value="font_14" priority="1" />
+      <Item value="Region`0" priority="0" />
+      <Item value="nodePath" priority="4" />
+      <Item value="str" priority="6" />
+      <Item value="counterOfChapter" priority="1" />
+      <Item value="nodeCollectionBody" priority="0" />
+      <Item value="htmlNode" priority="2" />
+      <Item value="bool" priority="3" />
+      <Item value="nodeType" priority="0" />
+      <Item value="comboBox1" priority="3" />
+      <Item value="LocalizationXmlParser`0" priority="0" />
+      <Item value="LocalizationXmlParser" priority="4" />
+      <Item value="LocalizationXmlPath" priority="0" />
+      <Item value="childNodes" priority="1" />
+      <Item value="strArr" priority="4" />
+      <Item value="Length" priority="1" />
+      <Item value="defaultLang" priority="3" />
+      <Item value="Dictionary&lt;string,string&gt;" priority="0" />
+      <Item value="localizationNode" priority="0" />
+      <Item value="inputTextXmlPath" priority="1" />
+      <Item value="localizationChildNodes" priority="3" />
+      <Item value="key" priority="1" />
+      <Item value="XmlNode`0" priority="1" />
+      <Item value="valur" priority="0" />
+      <Item value="lang" priority="2" />
+      <Item value="value" priority="0" />
+      <Item value="xRoot" priority="2" />
+      <Item value="testNode" priority="0" />
+      <Item value="inputNode" priority="1" />
+      <Item value="lxp" priority="0" />
+      <Item value="locXmlParser" priority="2" />
+      <Item value="selectedState" priority="0" />
+      <Item value="buttonTest" priority="0" />
+      <Item value="try" priority="5" />
+      <Item value="e" priority="4" />
+      <Item value="DefautLanguage`0" priority="0" />
+      <Item value="localizationXmlPath" priority="0" />
+      <Item value="Form1`0" priority="0" />
+      <Item value="defLang" priority="1" />
+      <Item value="ComboBox`0" priority="0" />
+      <Item value="comboBox" priority="0" />
+      <Item value="ev" priority="0" />
+      <Item value="numOfChupter" priority="0" />
+      <Item value="StyleXmlParser`0" priority="3" />
+      <Item value="XmlNodeList`0" priority="1" />
+      <Item value="styleOfTags" priority="1" />
+      <Item value="Dictionary&lt;string,KeyValuePair&lt;string,string&gt;&gt;" priority="0" />
+      <Item value="childenode" priority="3" />
+      <Item value="StyleXmlParser" priority="1" />
+      <Item value="childenodes" priority="3" />
+      <Item value="tagName" priority="3" />
+      <Item value="tagValueOfAttribute" priority="1" />
+      <Item value="tmpNode" priority="1" />
+      <Item value="listAttr" priority="2" />
+      <Item value="List&lt;AttributesOfTags&gt;" priority="0" />
+      <Item value="tagAttrribute" priority="1" />
+      <Item value="AttributesOfTags" priority="0" />
+      <Item value="tmpNodeAttribute" priority="1" />
+      <Item value="listOfAttr" priority="0" />
+      <Item value="Style" priority="0" />
+      <Item value="styleDictionary" priority="2" />
+      <Item value="tmpList" priority="0" />
+      <Item value="attribute" priority="4" />
+      <Item value="styleXmlParser" priority="1" />
+      <Item value="nodeBody" priority="1" />
+      <Item value="styleOfTagsInsert" priority="0" />
+      <Item value="Dictionary&lt;string,List&lt;AttributesOfTags&gt;&gt;" priority="0" />
+      <Item value="GetStyleForInsert`0" priority="0" />
+      <Item value="AttrForInsert" priority="0" />
+      <Item value="htmlNodeCollection" priority="0" />
+      <Item value="styleXmlPath" priority="0" />
+      <Item value="nodeHtml" priority="0" />
+      <Item value="CreatePdf`0" priority="1" />
+      <Item value="strPath" priority="1" />
+      <Item value="cPdf" priority="4" />
+      <Item value="CreatePdf" priority="0" />
+      <Item value="base" priority="0" />
+      <Item value="writer" priority="8" />
+      <Item value="cb" priority="1" />
+      <Item value="fileNameXML" priority="1" />
+      <Item value="tmp" priority="0" />
+      <Item value="tmpLang" priority="1" />
+      <Item value="endTocPage" priority="0" />
+      <Item value="fileNamePDF" priority="6" />
+      <Item value="namespace" priority="0" />
+      <Item value="scanForm" priority="2" />
+      <Item value="MainFrame" priority="0" />
+      <Item value="EZTwain`0" priority="8" />
+      <Item value="twain" priority="1" />
+      <Item value="Drawing" priority="2" />
+      <Item value="Image`0" priority="2" />
+      <Item value="Image" priority="3" />
+      <Item value="BaseColor" priority="2" />
+      <Item value="List&lt;Image&gt;" priority="0" />
+      <Item value="image" priority="2" />
+      <Item value="fileNamePDFtest" priority="1" />
+      <Item value="button4" priority="0" />
+      <Item value="pdfContentByte" priority="0" />
+      <Item value="stamper" priority="0" />
+      <Item value="Scan`0" priority="3" />
+      <Item value="DateTime`0" priority="0" />
+      <Item value="form" priority="0" />
+      <Item value="ScanToPdfLib" priority="1" />
+      <Item value="Scan" priority="0" />
+      <Item value="scan" priority="4" />
+      <Item value="fileNamePdftmp" priority="1" />
+      <Item value="fileNamePdfOutput" priority="1" />
+      <Item value="IntPtr`0" priority="1" />
+      <Item value="enum" priority="0" />
+      <Item value="PixTypes`0" priority="0" />
+      <Item value="ToolTipIcon`0" priority="0" />
+      <Item value="notifyIcon1" priority="0" />
+      <Item value="contextMenuStrip1" priority="0" />
+      <Item value="Hide`0" priority="0" />
+      <Item value="as" priority="1" />
+      <Item value="docHtml" priority="0" />
+      <Item value="ButtonBase`0" priority="0" />
+      <Item value="ToString`0" priority="0" />
+      <Item value="MessageBox`0" priority="4" />
+      <Item value="inputFont" priority="2" />
+      <Item value="cell" priority="0" />
+      <Item value="Element`0" priority="1" />
+      <Item value="paragraph" priority="1" />
+      <Item value="Paragraph" priority="0" />
+      <Item value="Chunk" priority="1" />
+      <Item value="cleanHtml" priority="0" />
+      <Item value="dirtyHtml" priority="0" />
+      <Item value="textBox1" priority="0" />
+      <Item value="ParameterizedThreadStart`0" priority="0" />
+      <Item value="textBox3" priority="0" />
+      <Item value="defaultDirectody" priority="0" />
+      <Item value="textBoxFileName" priority="1" />
+      <Item value="sender" priority="1" />
+      <Item value="TextBox`0" priority="0" />
+      <Item value="defaultDirectory" priority="2" />
+      <Item value="folderBrowserDialog1" priority="1" />
+      <Item value="Message`0" priority="0" />
+      <Item value="textBoxDefaultRirectory" priority="0" />
+      <Item value="textBox3FileName_TextChanged`0" priority="0" />
+      <Item value="fontBold_16" priority="0" />
+      <Item value="Environment`0" priority="0" />
+      <Item value="childNode" priority="1" />
+      <Item value="notFoundImgFlag" priority="0" />
+      <Item value="checkBoxImgDebug" priority="0" />
+      <Item value="PageSize`0" priority="0" />
+      <Item value="stream" priority="0" />
+      <Item value="tmpPath" priority="5" />
+      <Item value="CssResolverPipeline" priority="0" />
+      <Item value="FlowLayoutSettings`0" priority="0" />
+      <Item value="duplexPrintingFlag" priority="0" />
+      <Item value="TOCEvents`0" priority="0" />
+      <Item value="selectedLocalization" priority="1" />
+      <Item value="XMLWorkerHelper`0" priority="0" />
+      <Item value="HtmlPipelineContext`0" priority="1" />
+      <Item value="HtmlPipelineContext" priority="0" />
+      <Item value="Tags`0" priority="0" />
+      <Item value="htmlContext" priority="0" />
+      <Item value="Base64FormattingOptions`0" priority="0" />
+      <Item value="tmpChildnode" priority="0" />
+      <Item value="tdTextNode" priority="0" />
+      <Item value="tableNode" priority="0" />
+      <Item value="ClassName" priority="0" />
+      <Item value="InvalidCastException`0" priority="0" />
+      <Item value="DialogResult`0" priority="0" />
+      <Item value="resultNode" priority="0" />
+      <Item value="nodeCollectionIcon" priority="0" />
+      <Item value="float" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:iTextSharp.text.Document">
+      <Item value="NewPage`0" priority="5" />
+      <Item value="Open`0" priority="0" />
+      <Item value="Close`0" priority="1" />
+      <Item value="Add`0" priority="6" />
+      <Item value="PageNumber" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@iTextSharp.tool.xml.XMLWorkerHelper">
+      <Item value="GetCSS`0" priority="1" />
+      <Item value="GetInstance`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.IO.FileAccess">
+      <Item value="Read" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@iTextSharp.tool.xml.XMLWorkerFontProvider">
+      <Item value="DONTLOOKFORFONTS" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:iTextSharp.tool.xml.XMLWorkerFontProvider">
+      <Item value="Register`0" priority="3" />
+      <Item value="AddFontSubstitute`0" priority="0" />
+      <Item value="RegisterFamily`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:iTextSharp.tool.xml.pipeline.html.HtmlPipelineContext">
+      <Item value="SetTagFactory`0" priority="2" />
+      <Item value="SetImageProvider`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@iTextSharp.tool.xml.html.Tags">
+      <Item value="GetHtmlTagProcessorFactory`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:iTextSharp.tool.xml.pipeline.css.ICSSResolver">
+      <Item value="ResolveStyles`0" priority="0" />
+      <Item value="AddCss`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:iTextSharp.tool.xml.parser.XMLParser">
+      <Item value="Flush`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@iTextSharp.text.FontFactory">
+      <Item value="FontImp" priority="1" />
+      <Item value="Register`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Text.Encoding">
+      <Item value="UTF8" priority="8" />
+      <Item value="Convert`0" priority="1" />
+      <Item value="Unicode" priority="2" />
+      <Item value="Default" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:iTextSharp.text.html.simpleparser.HTMLWorker">
+      <Item value="Parse`0" priority="4" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Text.RegularExpressions.Regex">
+      <Item value="Replace`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.IO.FileStream">
+      <Item value="ToString`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.IO.File">
+      <Item value="OpenText`0" priority="3" />
+      <Item value="Create`0" priority="0" />
+      <Item value="Open`0" priority="1" />
+      <Item value="CreateText`0" priority="0" />
+      <Item value="Exists`0" priority="0" />
+      <Item value="ReadAllText`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Text.RegularExpressions.Match">
+      <Item value="Groups" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Text.RegularExpressions.Group">
+      <Item value="Value" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.String">
+      <Item value="Empty" priority="0" />
+      <Item value="IsNullOrEmpty`0" priority="6" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@iTextSharp.text.Font">
+      <Item value="BOLD" priority="2" />
+      <Item value="NORMAL" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:HtmlAgilityPack.HtmlDocument">
+      <Item value="LoadHtml`0" priority="0" />
+      <Item value="DocumentNode" priority="5" />
+      <Item value="CreateElement`0" priority="5" />
+      <Item value="OptionWriteEmptyNodes" priority="0" />
+      <Item value="CreateTextNode`0" priority="0" />
+      <Item value="ToString`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:HtmlAgilityPack.HtmlNode">
+      <Item value="GetAttributeValue`0" priority="0" />
+      <Item value="Attributes" priority="15" />
+      <Item value="InnerText" priority="21" />
+      <Item value="SelectNodes`0" priority="4" />
+      <Item value="ChildNodes" priority="7" />
+      <Item value="Remove`0" priority="4" />
+      <Item value="ParentNode" priority="13" />
+      <Item value="Name" priority="10" />
+      <Item value="InsertAfter`0" priority="3" />
+      <Item value="SetAttributeValue`0" priority="5" />
+      <Item value="OuterHtml" priority="0" />
+      <Item value="AppendChild`0" priority="14" />
+      <Item value="InsertBefore`0" priority="4" />
+      <Item value="InnerHtml" priority="16" />
+      <Item value="RemoveAll`0" priority="1" />
+      <Item value="XPath" priority="0" />
+      <Item value="PrependChild`0" priority="3" />
+      <Item value="FirstChild" priority="10" />
+      <Item value="ToString`0" priority="1" />
+      <Item value="OriginalName" priority="0" />
+      <Item value="ReplaceChild`0" priority="3" />
+      <Item value="SelectSingleNode`0" priority="3" />
+      <Item value="RemoveChild`0" priority="1" />
+      <Item value="RemoveAllChildren`0" priority="0" />
+      <Item value="Clone`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.Dictionary`2">
+      <Item value="Add`0" priority="4" />
+      <Item value="Clear`0" priority="0" />
+      <Item value="ContainsKey`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:HtmlAgilityPack.HtmlAttribute">
+      <Item value="Value" priority="3" />
+      <Item value="Remove`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@HtmlAgilityPack.HtmlNodeType">
+      <Item value="Element" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.IO.Path">
+      <Item value="GetFullPath`0" priority="2" />
+      <Item value="HasExtension`0" priority="0" />
+      <Item value="GetExtension`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.IO.Directory">
+      <Item value="SetCurrentDirectory`0" priority="0" />
+      <Item value="GetCurrentDirectory`0" priority="0" />
+      <Item value="CreateDirectory`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Windows.Forms.Application">
+      <Item value="StartupPath" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Text.Encoding">
+      <Item value="GetBytes`0" priority="2" />
+      <Item value="GetString`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:HtmlAgilityPack.HtmlNodeCollection">
+      <Item value="Add`0" priority="0" />
+      <Item value="Remove`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Net.WebException">
+      <Item value="InnerException" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Exception">
+      <Item value="Message" priority="8" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Drawing.Font">
+      <Item value="Bold" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Drawing.Color">
+      <Item value="Red" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.TextBox">
+      <Item value="AppendText`0" priority="1" />
+      <Item value="Text" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:HTML_to_PDF_book.Form1">
+      <Item value="label1" priority="0" />
+      <Item value="Handle" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.Label">
+      <Item value="Text" priority="4" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.Timer">
+      <Item value="Tick" priority="2" />
+      <Item value="Start`0" priority="0" />
+      <Item value="Stop`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:HtmlAgilityPack.HtmlAttributeCollection">
+      <Item value="RemoveAll`0" priority="3" />
+      <Item value="Add`0" priority="2" />
+      <Item value="Remove`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Console">
+      <Item value="WriteLine`0" priority="9" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.List`1">
+      <Item value="Add`0" priority="4" />
+      <Item value="Count" priority="0" />
+      <Item value="Capacity" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:HTML_to_PDF_book.Form1+ParentOfNodes">
+      <Item value="Parent" priority="1" />
+      <Item value="child" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.Form">
+      <Item value="ShowDialog`0" priority="0" />
+      <Item value="TopMost" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Threading.Thread">
+      <Item value="Abort`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.Button">
+      <Item value="Text" priority="3" />
+      <Item value="Visible" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:HTML_to_PDF_book.TimerForm">
+      <Item value="TimerStop`0" priority="1" />
+      <Item value="TopLevel" priority="0" />
+      <Item value="Close`0" priority="1" />
+      <Item value="TimerFormClose`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Xml.XmlNode">
+      <Item value="ChildNodes" priority="4" />
+      <Item value="Attributes" priority="3" />
+      <Item value="InnerXml" priority="0" />
+      <Item value="SelectSingleNode`0" priority="1" />
+      <Item value="Value" priority="3" />
+      <Item value="InnerText" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Xml.XmlAttribute">
+      <Item value="Value" priority="5" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:iTextSharp.text.pdf.PdfWriter">
+      <Item value="PageNumber" priority="1" />
+      <Item value="DirectContent" priority="0" />
+      <Item value="SetLinearPageMode`0" priority="0" />
+      <Item value="PageSize" priority="2" />
+      <Item value="GetVerticalPosition`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:iTextSharp.text.Image">
+      <Item value="Width" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.String">
+      <Item value="Indexer" priority="0" />
+      <Item value="ToString`0" priority="1" />
+      <Item value="Replace`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Int32">
+      <Item value="ToString`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:HTML_to_PDF_book.LocalizationXmlParser">
+      <Item value="DefautLanguage`0" priority="0" />
+      <Item value="SearchLanguages`0" priority="0" />
+      <Item value="GetLocalization`0" priority="2" />
+      <Item value="AddNodesToDictionary`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Xml.XmlNodeList">
+      <Item value="Count" priority="4" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Xml.XmlElement">
+      <Item value="SelectSingleNode`0" priority="0" />
+      <Item value="SelectNodes`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:HTML_to_PDF_book.TOCEvents">
+      <Item value="DrawColontitul" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Diagnostics.Process">
+      <Item value="HasExited" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:HTML_to_PDF_book.StyleXmlParser+AttributesOfTags">
+      <Item value="attribute" priority="2" />
+      <Item value="valueOfAttr" priority="1" />
+      <Item value="attributeName" priority="0" />
+      <Item value="valueOfAttrribute" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Windows.Forms.MessageBox">
+      <Item value="Show`0" priority="4" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:HTML_to_PDF_book.StyleXmlParser">
+      <Item value="GetStyle`0" priority="0" />
+      <Item value="RemoveOrReplaseCollectionsOfAttributes`0" priority="0" />
+      <Item value="FixCollectionsOfAttributes`0" priority="0" />
+      <Item value="SetAttributesOfTag`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.KeyValuePair`2">
+      <Item value="Key" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:HTML_to_PDF_book.StyleXmlParser+AttributesOfInsertTag">
+      <Item value="tagName" priority="1" />
+      <Item value="attributes" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@HtmlToPdfLib.Class1">
+      <Item value="test`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:HtmlToPdfLib.CreatePdf">
+      <Item value="CreateNewPdf`0" priority="0" />
+      <Item value="SetPathXmlFile`0" priority="0" />
+      <Item value="notFoundImgFlag" priority="1" />
+      <Item value="duplexPrintingFlag" priority="1" />
+      <Item value="selectedLang" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:iTextSharp.text.pdf.PdfPageEventHelper">
+      <Item value="OnOpenDocument`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:HtmlToPdfLib.LocalizationXmlParser">
+      <Item value="GetNewLanguage`0" priority="0" />
+      <Item value="DefautLanguage`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:TwainGui.MainFrame">
+      <Item value="TopLevel" priority="0" />
+      <Item value="ShowDialog`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Dosadi.EZTwain.EZTwain">
+      <Item value="OpenSourceManager`0" priority="2" />
+      <Item value="OpenDefaultSource`0" priority="0" />
+      <Item value="SelectImageSource`0" priority="0" />
+      <Item value="IsAvailable`0" priority="0" />
+      <Item value="AcquireNative`0" priority="0" />
+      <Item value="State`0" priority="0" />
+      <Item value="TWAIN_BW" priority="0" />
+      <Item value="TWAIN_GRAY" priority="0" />
+      <Item value="TWAIN_RGB" priority="0" />
+      <Item value="TWAIN_PALETTE" priority="0" />
+      <Item value="TWAIN_ANYTYPE" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Drawing.Image">
+      <Item value="Height" priority="0" />
+      <Item value="Width" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Diagnostics.Process">
+      <Item value="Start`0" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:iTextSharp.text.pdf.PdfStamper">
+      <Item value="GetUnderContent`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:iTextSharp.text.pdf.PdfReader">
+      <Item value="NumberOfPages" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.DateTime">
+      <Item value="Today" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.DateTime">
+      <Item value="ToString`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ScanToPdfLib.Scan">
+      <Item value="ScanImage`0" priority="0" />
+      <Item value="CreatePdfWithImg`0" priority="0" />
+      <Item value="AppendToExistingDocument`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@ScanToPdfLib.Scan+PixTypes">
+      <Item value="TWAIN_RGB" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.NotifyIcon">
+      <Item value="ShowBalloonTip`0" priority="0" />
+      <Item value="ContextMenuStrip" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Windows.Forms.ToolTipIcon">
+      <Item value="Info" priority="0" />
+      <Item value="None" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@TidyManaged.Document">
+      <Item value="FromStream`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:TidyManaged.Document">
+      <Item value="CharacterEncoding" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@TidyManaged.EncodingType">
+      <Item value="Utf8" priority="0" />
+      <Item value="Ascii" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:HtmlToPdfLib.CreatePdf+ParentOfNodes">
+      <Item value="parent" priority="0" />
+      <Item value="child" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:iTextSharp.text.Font">
+      <Item value="BaseFont" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:iTextSharp.text.pdf.PdfPCell">
+      <Item value="Border" priority="0" />
+      <Item value="HorizontalAlignment" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@iTextSharp.text.Element">
+      <Item value="ALIGN_CENTER" priority="3" />
+      <Item value="ALIGN_MIDDLE" priority="3" />
+      <Item value="ALIGN_RIGHT" priority="1" />
+      <Item value="ALIGN_TOP" priority="0" />
+      <Item value="ALIGN_JUSTIFIED" priority="0" />
+      <Item value="ALIGN_LEFT" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:iTextSharp.text.Chunk">
+      <Item value="Content" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:iTextSharp.text.Paragraph">
+      <Item value="Alignment" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.FolderBrowserDialog">
+      <Item value="ShowDialog`0" priority="0" />
+      <Item value="SelectedPath" priority="1" />
+      <Item value="RootFolder" priority="1" />
+      <Item value="ShowNewFolderButton" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Environment">
+      <Item value="SpecialFolder`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Environment+SpecialFolder">
+      <Item value="Personal" priority="0" />
+      <Item value="Startup" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.CheckBox">
+      <Item value="Checked" priority="3" />
+      <Item value="CheckState" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@iTextSharp.text.PageSize">
+      <Item value="A4" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:iTextSharp.text.Rectangle">
+      <Item value="GetLeft`0" priority="1" />
+      <Item value="GetRight`0" priority="0" />
+      <Item value="Height" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:HtmlToPdfLib.TOCEvents">
+      <Item value="DrawFooter" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:iTextSharp.tool.xml.XMLWorkerHelper">
+      <Item value="GetDefaultCssResolver`0" priority="2" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="F2923BD4-FE29-41CD-B2B5-169234AEC4EA/f:Scan.cs" caret="6527" fromTop="45" />
+      <File id="9ADBD108-8161-4A83-B6CE-EEE20AA2D6F4/f:Program.cs" caret="324" fromTop="13" />
+      <File id="024572EB-02AD-4212-947D-BB7038F94CF1/f:StyleXmlParser.cs" caret="6045" fromTop="2" />
+      <File id="024572EB-02AD-4212-947D-BB7038F94CF1/f:LocalizationXmlParser.cs" caret="3836" fromTop="17" />
+      <File id="9ADBD108-8161-4A83-B6CE-EEE20AA2D6F4/f:TimerForm.cs" caret="1027" fromTop="24" />
+      <File id="9ADBD108-8161-4A83-B6CE-EEE20AA2D6F4/f:Form1.Designer.cs" caret="17419" fromTop="24" />
+      <File id="9ADBD108-8161-4A83-B6CE-EEE20AA2D6F4/f:Form1.cs" caret="2883" fromTop="37" />
+      <File id="024572EB-02AD-4212-947D-BB7038F94CF1/f:TOCEvents.cs" caret="3013" fromTop="28" />
+      <File id="024572EB-02AD-4212-947D-BB7038F94CF1/f:CreatePdf.cs" caret="38487" fromTop="15" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="024572EB-02AD-4212-947D-BB7038F94CF1/f:TOCEvents.cs" caret="2611" fromTop="12" />
+      <File id="024572EB-02AD-4212-947D-BB7038F94CF1/f:TOCEvents.cs" caret="3151" fromTop="26" />
+      <File id="024572EB-02AD-4212-947D-BB7038F94CF1/f:TOCEvents.cs" caret="3406" fromTop="30" />
+      <File id="024572EB-02AD-4212-947D-BB7038F94CF1/f:TOCEvents.cs" caret="1372" fromTop="10" />
+      <File id="024572EB-02AD-4212-947D-BB7038F94CF1/f:TOCEvents.cs" caret="2911" fromTop="25" />
+      <File id="024572EB-02AD-4212-947D-BB7038F94CF1/f:TOCEvents.cs" caret="3750" fromTop="43" />
+      <File id="024572EB-02AD-4212-947D-BB7038F94CF1/f:CreatePdf.cs" caret="39581" fromTop="29" />
+      <File id="024572EB-02AD-4212-947D-BB7038F94CF1/f:CreatePdf.cs" caret="39201" fromTop="18" />
+      <File id="024572EB-02AD-4212-947D-BB7038F94CF1/f:CreatePdf.cs" caret="9128" fromTop="25" />
+      <File id="024572EB-02AD-4212-947D-BB7038F94CF1/f:CreatePdf.cs" caret="10557" fromTop="22" />
+      <File id="024572EB-02AD-4212-947D-BB7038F94CF1/f:CreatePdf.cs" caret="10831" fromTop="24" />
+      <File id="024572EB-02AD-4212-947D-BB7038F94CF1/f:CreatePdf.cs" caret="34156" fromTop="14" />
+      <File id="024572EB-02AD-4212-947D-BB7038F94CF1/f:CreatePdf.cs" caret="42907" fromTop="35" />
+      <File id="024572EB-02AD-4212-947D-BB7038F94CF1/f:CreatePdf.cs" caret="29122" fromTop="16" />
+      <File id="024572EB-02AD-4212-947D-BB7038F94CF1/f:CreatePdf.cs" caret="43564" fromTop="20" />
+      <File id="024572EB-02AD-4212-947D-BB7038F94CF1/f:CreatePdf.cs" caret="43654" fromTop="24" />
+      <File id="024572EB-02AD-4212-947D-BB7038F94CF1/f:CreatePdf.cs" caret="34917" fromTop="25" />
+      <File id="024572EB-02AD-4212-947D-BB7038F94CF1/f:CreatePdf.cs" caret="48725" fromTop="30" />
+      <File id="024572EB-02AD-4212-947D-BB7038F94CF1/f:CreatePdf.cs" caret="48710" fromTop="37" />
+      <File id="024572EB-02AD-4212-947D-BB7038F94CF1/f:CreatePdf.cs" caret="48710" fromTop="39" />
+      <File id="024572EB-02AD-4212-947D-BB7038F94CF1/f:CreatePdf.cs" caret="48582" fromTop="37" />
+      <File id="024572EB-02AD-4212-947D-BB7038F94CF1/f:CreatePdf.cs" caret="48333" fromTop="27" />
+      <File id="024572EB-02AD-4212-947D-BB7038F94CF1/f:CreatePdf.cs" caret="33042" fromTop="8" />
+      <File id="024572EB-02AD-4212-947D-BB7038F94CF1/f:CreatePdf.cs" caret="12686" fromTop="19" />
+      <File id="024572EB-02AD-4212-947D-BB7038F94CF1/f:CreatePdf.cs" caret="13660" fromTop="23" />
+      <File id="024572EB-02AD-4212-947D-BB7038F94CF1/f:CreatePdf.cs" caret="38869" fromTop="27" />
+      <File id="024572EB-02AD-4212-947D-BB7038F94CF1/f:CreatePdf.cs" caret="38364" fromTop="13" />
+      <File id="024572EB-02AD-4212-947D-BB7038F94CF1/f:CreatePdf.cs" caret="38769" fromTop="0" />
+      <File id="024572EB-02AD-4212-947D-BB7038F94CF1/f:CreatePdf.cs" caret="48538" fromTop="24" />
+      <File id="024572EB-02AD-4212-947D-BB7038F94CF1/f:CreatePdf.cs" caret="7806" fromTop="18" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+</Configuration>

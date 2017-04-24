@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+  <localization>
+    <node id ="tableOfContent">
+      <textItem lang ="ru">Содержание</textItem>
+      <textItem lang ="en">Table of content</textItem>
+    </node>
+    <node id ="noXML">
+      <textItem lang ="ru">Нет XML-файла</textItem>
+      <textItem lang ="en">No xml</textItem>
+    </node>
+    <node id ="img">
+      <textItem lang ="ru">Рис.</textItem>
+      <textItem lang ="en">Picture</textItem>
+    </node>
+    <node id ="generalView">
+      <textItem lang ="ru">Общий вид</textItem>
+      <textItem lang ="en">General view</textItem>
+    </node>
+    <node id ="noPicture">
+      <textItem lang ="ru">***нет картинки***</textItem>
+      <textItem lang ="en">***No picture***</textItem>
+    </node>
+    <node id ="buttonGo">
+      <textItem lang ="ru">Создать PDF</textItem>
+      <textItem lang ="en">Create PDF</textItem>
+    </node>
+    <node id ="selectedLanguage">
+      <textItem lang ="ru">Выбранный язык</textItem>
+      <textItem lang ="en">Selected language</textItem>
+    </node>
+    <node id ="numberOfPage">
+      <textItem lang ="ru">Стр.</textItem>
+      <textItem lang ="en">Page</textItem>
+    </node>
+	<node id ="#">
+      <textItem lang ="ru">#</textItem>
+      <textItem lang ="en">#</textItem>
+    </node>
+  </localization>
+</root>

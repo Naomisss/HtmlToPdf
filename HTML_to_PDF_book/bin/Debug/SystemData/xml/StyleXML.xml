@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+  <tag name="font"></tag>
+  <tag name="span"></tag>
+  <tag name="p"></tag>
+  <!--<tag name="table">
+    <attribute name="border" value="1"/>
+    <attribute name="cellpadding" value="5"/>
+  </tag>
+  <tag name="th"></tag>
+  <tag name="td"></tag>
+  <tag name="img" class="insert">
+    <attribute name="width" value="400"/>
+    <attribute name="vspace" value="30"/>
+    <attribute name="align" value="center"/>-->
+  </tag>
+</root>
