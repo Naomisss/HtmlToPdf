@@ -639,6 +639,7 @@ namespace HtmlToPdfLib
 
                 content = File.ReadAllText(htmlPath);//без изменений
                 doc.LoadHtml(content);
+
             }
             catch (Exception ex)
             {
@@ -750,8 +751,17 @@ namespace HtmlToPdfLib
 
                     tmpPath = tmpPath.Replace(@"/", @"\");
 
+                    //if (tmpPath == (curentDirectory + "Documentation\\IASO\\Modules\\LearningFrame\\Images\\redacting_bar_text.png"))
+                    //{
+                        
+                    //}
+
+
+
                     if (!String.IsNullOrEmpty(tmpPath) && File.Exists(tmpPath))
                     {
+                        //redacting_bar_main.png
+
                         var uri = new System.Uri(tmpPath);
                         var convertedURI = uri.AbsoluteUri;
 
@@ -761,6 +771,12 @@ namespace HtmlToPdfLib
                         int heightImg;
                         int widthImg;
                         int minLimit = 64;
+                        int maxLimit = 600;
+
+                        if (convertedURI == @"file:///D:/Ignatiev_I_A_Unity/Projects/c%23/PdfItextSharp/HTML_to_PDF_book/HTML_to_PDF_book/bin/Debug/OD%20MiG-29%20UPG/User%20manual%20-%20Instructor/bin/Data/Data/Resources/Documentation/IASO/Modules/Communication/taskbar_button.png")
+                        {
+
+                        }
 
                         try
                         {
@@ -771,7 +787,7 @@ namespace HtmlToPdfLib
                                 heightImg = img.Height;
                             }
 
-                            if ((widthImg < minLimit) || (heightImg < minLimit))
+                            if ((widthImg < minLimit) && (heightImg < minLimit))
                             {
                                 if (widthImg == heightImg)
                                 {
@@ -780,16 +796,61 @@ namespace HtmlToPdfLib
                                 else
                                 {
                                     htmlNode.SetAttributeValue("class", "picture-text");
+
+                                    //if ((widthImg < ))
+                                    //{
+                                    //    htmlNode.SetAttributeValue("class", "picture-text");
+                                    //}
+                                    //else
+                                    //{
+                                    //    htmlNode.SetAttributeValue("class", "picture-text");
+                                    //}
                                 }
                             }
-                            else
+                            else if ((widthImg < maxLimit) && (heightImg < maxLimit))
                             {
                                 htmlNode.SetAttributeValue("class", "ui-chapter-picture_abc-standart");
                             }
+                            else if (widthImg > heightImg)
+                            {
+                                htmlNode.SetAttributeValue("class", ".ui-chapter-picture_abc-landscape");
+                            }
+                            else if(heightImg > widthImg)
+                            {
+                                htmlNode.SetAttributeValue("class", ".ui-chapter-picture_abc-portrait");
+                            }
+
+                            //if ((widthImg < minLimit) || (heightImg < minLimit))
+                            //{
+                            //    if (widthImg == heightImg)
+                            //    {
+                            //        htmlNode.SetAttributeValue("class", "icon");
+                            //    }
+                            //    else
+                            //    {
+                            //        //if ((widthImg < ))
+                            //        //{
+                            //        //    htmlNode.SetAttributeValue("class", "picture-text");
+                            //        //}
+                            //        //else
+                            //        //{
+                            //        //    htmlNode.SetAttributeValue("class", "picture-text");
+                            //        //}
+
+                            //        htmlNode.SetAttributeValue("class", "picture-text");
+                            //    }
+                            //}
+                            //else
+                            //{
+                            //    if (widthImg > maxLimit)
+                            //        htmlNode.SetAttributeValue("class", "ui-chapter-picture_abc-landscape");
+                            //    else
+                            //        htmlNode.SetAttributeValue("class", "ui-chapter-picture_abc-standart");
+                            //}
                         }
                         catch(Exception e)
                         {
-                            MessageBox.Show(e.Message);
+                            MessageBox.Show(e.Message + " " + tmpPath);
                         }
 
                         
@@ -968,6 +1029,11 @@ namespace HtmlToPdfLib
 
             if (!String.IsNullOrEmpty(tmpPath) && File.Exists(tmpPath))
             {
+                //if (tmpPath == (curentDirectory + "Resources\\Documentation\\IASO\\Modules\\MmLection\\Pictures\\lecture_eng.png"))
+                //{
+                //    
+                //}
+
                 var uri = new System.Uri(tmpPath);
                 var convertedURI = uri.AbsoluteUri;
 
@@ -1005,7 +1071,7 @@ namespace HtmlToPdfLib
                 }
                 catch(Exception e)
                 {
-
+                    MessageBox.Show(e.Message + " " + tmpPath);
                 }
 
 
@@ -1088,7 +1154,7 @@ namespace HtmlToPdfLib
             return resultNode;
         }
 
-        private void prepareIconColumn(HtmlNode node)
+        private void  prepareIconColumn(HtmlNode node)
         {
             var parent = node.ParentNode;
 

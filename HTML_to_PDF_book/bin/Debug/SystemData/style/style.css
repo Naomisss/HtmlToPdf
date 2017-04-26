@@ -623,7 +623,7 @@ p img.picture-text, .picture-text
 
 .docTable td.column_icon{/*th.column_icon{*/
 	width: 50px;
-	background: #ff9900;
+	/*background: #ff9900;*/
 }
 
 .icon
@@ -633,14 +633,14 @@ p img.picture-text, .picture-text
 
 	display:inline-block;
 	vertical-align: bottom !important;
-	border: 2px #f00 solid;
+	/*border: 2px #f00 solid;*/
 }
 
 td .icon, .picture-text{
-	width: 32px;
+	width: auto;/*32px*/;
 	height: 32px;
 	padding: 0 10px;
 	page-break-inside: avoid;
 	display: block;
-	border: 2px #f00 solid;
+	/*border: 2px #f00 solid;*/
 }
