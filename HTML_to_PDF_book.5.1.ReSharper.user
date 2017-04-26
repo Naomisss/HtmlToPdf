@@ -41,7 +41,7 @@
       <Item value="FileStream`0" priority="5" />
       <Item value="FileStream" priority="1" />
       <Item value="Open" priority="1" />
-      <Item value="FileMode`0" priority="0" />
+      <Item value="FileMode`0" priority="1" />
       <Item value="XMLWorkerFontProvider`0" priority="3" />
       <Item value="fontProvider" priority="8" />
       <Item value="XMLWorkerFontProvider" priority="1" />
@@ -54,7 +54,7 @@
       <Item value="fileCSS" priority="1" />
       <Item value="true" priority="13" />
       <Item value="worker" priority="2" />
-      <Item value="if" priority="43" />
+      <Item value="if" priority="44" />
       <Item value="TextReader`0" priority="9" />
       <Item value="p" priority="0" />
       <Item value="foreach" priority="22" />
@@ -362,6 +362,8 @@
       <Item value="resultNode" priority="0" />
       <Item value="nodeCollectionIcon" priority="0" />
       <Item value="float" priority="0" />
+      <Item value="convertedURI" priority="0" />
+      <Item value="heightImg" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:iTextSharp.text.Document">
       <Item value="NewPage`0" priority="5" />
@@ -775,6 +777,9 @@
     <ItemStatistics item="Qualified:iTextSharp.tool.xml.XMLWorkerHelper">
       <Item value="GetDefaultCssResolver`0" priority="2" />
     </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.IO.FileMode">
+      <Item value="Open" priority="0" />
+    </ItemStatistics>
   </CompletionStatisticsManager>
   <RecentFiles>
     <RecentFiles>
@@ -785,40 +790,40 @@
       <File id="9ADBD108-8161-4A83-B6CE-EEE20AA2D6F4/f:TimerForm.cs" caret="1027" fromTop="24" />
       <File id="9ADBD108-8161-4A83-B6CE-EEE20AA2D6F4/f:Form1.Designer.cs" caret="17419" fromTop="24" />
       <File id="9ADBD108-8161-4A83-B6CE-EEE20AA2D6F4/f:Form1.cs" caret="2883" fromTop="37" />
-      <File id="024572EB-02AD-4212-947D-BB7038F94CF1/f:TOCEvents.cs" caret="3013" fromTop="28" />
-      <File id="024572EB-02AD-4212-947D-BB7038F94CF1/f:CreatePdf.cs" caret="38487" fromTop="15" />
+      <File id="024572EB-02AD-4212-947D-BB7038F94CF1/f:TOCEvents.cs" caret="1230" fromTop="38" />
+      <File id="024572EB-02AD-4212-947D-BB7038F94CF1/f:CreatePdf.cs" caret="29966" fromTop="3" />
     </RecentFiles>
     <RecentEdits>
-      <File id="024572EB-02AD-4212-947D-BB7038F94CF1/f:TOCEvents.cs" caret="2611" fromTop="12" />
-      <File id="024572EB-02AD-4212-947D-BB7038F94CF1/f:TOCEvents.cs" caret="3151" fromTop="26" />
-      <File id="024572EB-02AD-4212-947D-BB7038F94CF1/f:TOCEvents.cs" caret="3406" fromTop="30" />
-      <File id="024572EB-02AD-4212-947D-BB7038F94CF1/f:TOCEvents.cs" caret="1372" fromTop="10" />
-      <File id="024572EB-02AD-4212-947D-BB7038F94CF1/f:TOCEvents.cs" caret="2911" fromTop="25" />
-      <File id="024572EB-02AD-4212-947D-BB7038F94CF1/f:TOCEvents.cs" caret="3750" fromTop="43" />
-      <File id="024572EB-02AD-4212-947D-BB7038F94CF1/f:CreatePdf.cs" caret="39581" fromTop="29" />
-      <File id="024572EB-02AD-4212-947D-BB7038F94CF1/f:CreatePdf.cs" caret="39201" fromTop="18" />
-      <File id="024572EB-02AD-4212-947D-BB7038F94CF1/f:CreatePdf.cs" caret="9128" fromTop="25" />
-      <File id="024572EB-02AD-4212-947D-BB7038F94CF1/f:CreatePdf.cs" caret="10557" fromTop="22" />
-      <File id="024572EB-02AD-4212-947D-BB7038F94CF1/f:CreatePdf.cs" caret="10831" fromTop="24" />
-      <File id="024572EB-02AD-4212-947D-BB7038F94CF1/f:CreatePdf.cs" caret="34156" fromTop="14" />
-      <File id="024572EB-02AD-4212-947D-BB7038F94CF1/f:CreatePdf.cs" caret="42907" fromTop="35" />
-      <File id="024572EB-02AD-4212-947D-BB7038F94CF1/f:CreatePdf.cs" caret="29122" fromTop="16" />
-      <File id="024572EB-02AD-4212-947D-BB7038F94CF1/f:CreatePdf.cs" caret="43564" fromTop="20" />
-      <File id="024572EB-02AD-4212-947D-BB7038F94CF1/f:CreatePdf.cs" caret="43654" fromTop="24" />
-      <File id="024572EB-02AD-4212-947D-BB7038F94CF1/f:CreatePdf.cs" caret="34917" fromTop="25" />
-      <File id="024572EB-02AD-4212-947D-BB7038F94CF1/f:CreatePdf.cs" caret="48725" fromTop="30" />
-      <File id="024572EB-02AD-4212-947D-BB7038F94CF1/f:CreatePdf.cs" caret="48710" fromTop="37" />
-      <File id="024572EB-02AD-4212-947D-BB7038F94CF1/f:CreatePdf.cs" caret="48710" fromTop="39" />
-      <File id="024572EB-02AD-4212-947D-BB7038F94CF1/f:CreatePdf.cs" caret="48582" fromTop="37" />
-      <File id="024572EB-02AD-4212-947D-BB7038F94CF1/f:CreatePdf.cs" caret="48333" fromTop="27" />
-      <File id="024572EB-02AD-4212-947D-BB7038F94CF1/f:CreatePdf.cs" caret="33042" fromTop="8" />
+      <File id="024572EB-02AD-4212-947D-BB7038F94CF1/f:CreatePdf.cs" caret="52318" fromTop="37" />
+      <File id="024572EB-02AD-4212-947D-BB7038F94CF1/f:CreatePdf.cs" caret="52318" fromTop="39" />
+      <File id="024572EB-02AD-4212-947D-BB7038F94CF1/f:CreatePdf.cs" caret="52190" fromTop="37" />
+      <File id="024572EB-02AD-4212-947D-BB7038F94CF1/f:CreatePdf.cs" caret="51941" fromTop="27" />
+      <File id="024572EB-02AD-4212-947D-BB7038F94CF1/f:CreatePdf.cs" caret="36384" fromTop="8" />
       <File id="024572EB-02AD-4212-947D-BB7038F94CF1/f:CreatePdf.cs" caret="12686" fromTop="19" />
       <File id="024572EB-02AD-4212-947D-BB7038F94CF1/f:CreatePdf.cs" caret="13660" fromTop="23" />
-      <File id="024572EB-02AD-4212-947D-BB7038F94CF1/f:CreatePdf.cs" caret="38869" fromTop="27" />
-      <File id="024572EB-02AD-4212-947D-BB7038F94CF1/f:CreatePdf.cs" caret="38364" fromTop="13" />
-      <File id="024572EB-02AD-4212-947D-BB7038F94CF1/f:CreatePdf.cs" caret="38769" fromTop="0" />
-      <File id="024572EB-02AD-4212-947D-BB7038F94CF1/f:CreatePdf.cs" caret="48538" fromTop="24" />
+      <File id="024572EB-02AD-4212-947D-BB7038F94CF1/f:CreatePdf.cs" caret="42477" fromTop="27" />
+      <File id="024572EB-02AD-4212-947D-BB7038F94CF1/f:CreatePdf.cs" caret="41972" fromTop="13" />
+      <File id="024572EB-02AD-4212-947D-BB7038F94CF1/f:CreatePdf.cs" caret="42377" fromTop="0" />
+      <File id="024572EB-02AD-4212-947D-BB7038F94CF1/f:CreatePdf.cs" caret="52146" fromTop="24" />
       <File id="024572EB-02AD-4212-947D-BB7038F94CF1/f:CreatePdf.cs" caret="7806" fromTop="18" />
+      <File id="024572EB-02AD-4212-947D-BB7038F94CF1/f:CreatePdf.cs" caret="40150" fromTop="27" />
+      <File id="024572EB-02AD-4212-947D-BB7038F94CF1/f:TOCEvents.cs" caret="1809" fromTop="22" />
+      <File id="024572EB-02AD-4212-947D-BB7038F94CF1/f:CreatePdf.cs" caret="23593" fromTop="14" />
+      <File id="024572EB-02AD-4212-947D-BB7038F94CF1/f:CreatePdf.cs" caret="23701" fromTop="17" />
+      <File id="024572EB-02AD-4212-947D-BB7038F94CF1/f:CreatePdf.cs" caret="23703" fromTop="15" />
+      <File id="024572EB-02AD-4212-947D-BB7038F94CF1/f:CreatePdf.cs" caret="28612" fromTop="18" />
+      <File id="024572EB-02AD-4212-947D-BB7038F94CF1/f:CreatePdf.cs" caret="31769" fromTop="10" />
+      <File id="024572EB-02AD-4212-947D-BB7038F94CF1/f:CreatePdf.cs" caret="33214" fromTop="36" />
+      <File id="024572EB-02AD-4212-947D-BB7038F94CF1/f:CreatePdf.cs" caret="29851" fromTop="4" />
+      <File id="024572EB-02AD-4212-947D-BB7038F94CF1/f:CreatePdf.cs" caret="31689" fromTop="27" />
+      <File id="024572EB-02AD-4212-947D-BB7038F94CF1/f:CreatePdf.cs" caret="30741" fromTop="13" />
+      <File id="024572EB-02AD-4212-947D-BB7038F94CF1/f:CreatePdf.cs" caret="30321" fromTop="14" />
+      <File id="024572EB-02AD-4212-947D-BB7038F94CF1/f:CreatePdf.cs" caret="33383" fromTop="29" />
+      <File id="024572EB-02AD-4212-947D-BB7038F94CF1/f:CreatePdf.cs" caret="41702" fromTop="21" />
+      <File id="024572EB-02AD-4212-947D-BB7038F94CF1/f:CreatePdf.cs" caret="28452" fromTop="13" />
+      <File id="024572EB-02AD-4212-947D-BB7038F94CF1/f:CreatePdf.cs" caret="29328" fromTop="29" />
+      <File id="024572EB-02AD-4212-947D-BB7038F94CF1/f:CreatePdf.cs" caret="31139" fromTop="29" />
+      <File id="024572EB-02AD-4212-947D-BB7038F94CF1/f:CreatePdf.cs" caret="31011" fromTop="19" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>

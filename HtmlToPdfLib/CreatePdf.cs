@@ -809,7 +809,10 @@ namespace HtmlToPdfLib
                             }
                             else if ((widthImg < maxLimit) && (heightImg < maxLimit))
                             {
-                                htmlNode.SetAttributeValue("class", "ui-chapter-picture_abc-standart");
+                                if ((widthImg < minLimit) || (heightImg < minLimit))
+                                    htmlNode.SetAttributeValue("class", "picture-text");
+                                else
+                                    htmlNode.SetAttributeValue("class", "ui-chapter-picture_abc-standart");
                             }
                             else if (widthImg > heightImg)
                             {
