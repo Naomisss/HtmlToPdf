@@ -54,6 +54,11 @@ namespace HtmlToPdfLib
         public bool showDebugImgFlag = false;
         public bool duplexPrintingFlag = false;
 
+        //
+        bool debugSaveHTMLFlag = true;
+        //
+
+
         //private string defaultLang = "";
         public string selectedLang = "";
 
@@ -140,6 +145,9 @@ namespace HtmlToPdfLib
                 //Crete event
                 writer.SetLinearPageMode();
                 writer.PageEvent = ev;
+
+//                MessageBox.Show("Height: " + writer.PageSize.Height + " Width: " + writer.PageSize.Width
+//                    + "work area height: " + (writer.PageSize.Height - 72f - 72f) + "work area height: " + (writer.PageSize.Width - 36f - 36f));
 
 
                 document.Open();
@@ -674,18 +682,15 @@ namespace HtmlToPdfLib
             doc.LoadHtml(content);
 
 
-            HtmlNode nodeBody = doc.DocumentNode.SelectSingleNode("//body");
-            HtmlNodeCollection nodeCollectionA = doc.DocumentNode.SelectNodes("//a[@class='abc-picture']");
 
-            HtmlNodeCollection nodeCollectionImg = doc.DocumentNode.SelectNodes("//img");
-
+            #region Colection h1,2,3,4,5
             HtmlNodeCollection nodeCollectionH1 = doc.DocumentNode.SelectNodes("//h1");
             HtmlNodeCollection nodeCollectionH2 = doc.DocumentNode.SelectNodes("//h2");
             HtmlNodeCollection nodeCollectionH3 = doc.DocumentNode.SelectNodes("//h3");
             HtmlNodeCollection nodeCollectionH4 = doc.DocumentNode.SelectNodes("//h4");
             HtmlNodeCollection nodeCollectionH5 = doc.DocumentNode.SelectNodes("//h5");
 
-            #region Colection h1,2,3,4,5
+            
             if (nodeCollectionH1 != null)
             {
                 prepareHNodeCollection(nodeCollectionH1, "divH1", doc);
@@ -708,14 +713,14 @@ namespace HtmlToPdfLib
             }
             #endregion
 
-
+            #region Colection DivBlock
             HtmlNodeCollection nodeCollectionDivBlockAlert = doc.DocumentNode.SelectNodes("//div[@class='blockAlert']");
             HtmlNodeCollection nodeCollectionDivBlockAttention = doc.DocumentNode.SelectNodes("//div[@class='blockAttention']");
             HtmlNodeCollection nodeCollectionDivBlockQuote = doc.DocumentNode.SelectNodes("//div[@class='blockQuote']");
             HtmlNodeCollection nodeCollectionDivBlockInfo = doc.DocumentNode.SelectNodes("//div[@class='blockInfo']");
             HtmlNodeCollection nodeCollectionDivBlockNote = doc.DocumentNode.SelectNodes("//div[@class='blockNote']");
 
-            #region Colection DivBlock
+            
             if (nodeCollectionDivBlockAlert != null)
             {
                 prepareDivBloc(nodeCollectionDivBlockAlert, doc);
@@ -738,6 +743,30 @@ namespace HtmlToPdfLib
             }
             #endregion
 
+            #region div in li
+            HtmlNodeCollection nodeCollectionDivInLi = doc.DocumentNode.SelectNodes("//li/div");
+
+            if (nodeCollectionDivInLi != null)
+            {
+                foreach (var node in nodeCollectionDivInLi)
+                {
+                    var parent = node.ParentNode;
+
+                    var tmpTextHtmlNode = node.InnerHtml;
+
+                    parent.InnerHtml = tmpTextHtmlNode;
+                }
+                
+            }
+
+            #endregion
+
+            #region Colections a(image), img
+            HtmlNode nodeBody = doc.DocumentNode.SelectSingleNode("//body");
+            HtmlNodeCollection nodeCollectionA = doc.DocumentNode.SelectNodes("//a[@class='abc-picture']");
+            HtmlNodeCollection nodeCollectionImg = doc.DocumentNode.SelectNodes("//img");
+
+            
             if (nodeBody != null)
             {
                 string textOfImg = locXmlParser.GetLocalization("img") + " " + str + counterOfChapter;
@@ -771,12 +800,15 @@ namespace HtmlToPdfLib
                         int heightImg;
                         int widthImg;
                         int minLimit = 64;
-                        int maxLimit = 600;
+                        //int maxLimit = 600;
 
-                        if (convertedURI == @"file:///D:/Ignatiev_I_A_Unity/Projects/c%23/PdfItextSharp/HTML_to_PDF_book/HTML_to_PDF_book/bin/Debug/OD%20MiG-29%20UPG/User%20manual%20-%20Instructor/bin/Data/Data/Resources/Documentation/IASO/Modules/Communication/taskbar_button.png")
-                        {
+                        int maxLimitWidth = 600;
+                        int maxLimitHeight = 540;
 
-                        }
+//                        if (convertedURI == @"file:///D:/Ignatiev_I_A_Unity/Projects/c%23/PdfItextSharp/HTML_to_PDF_book/HTML_to_PDF_book/bin/Debug/OD%20MiG-29%20UPG/User%20manual%20-%20Instructor/bin/Data/Data/Resources/Documentation/IASO/Modules/Communication/taskbar_button.png")
+//                        {
+//
+//                        }
 
                         try
                         {
@@ -807,7 +839,7 @@ namespace HtmlToPdfLib
                                     //}
                                 }
                             }
-                            else if ((widthImg < maxLimit) && (heightImg < maxLimit))
+                            else if ((widthImg < maxLimitWidth) && (heightImg < maxLimitHeight))
                             {
                                 if ((widthImg < minLimit) || (heightImg < minLimit))
                                     htmlNode.SetAttributeValue("class", "picture-text");
@@ -853,7 +885,8 @@ namespace HtmlToPdfLib
                         }
                         catch(Exception e)
                         {
-                            MessageBox.Show(e.Message + " " + tmpPath);
+                            if(showDebugImgFlag)
+                                MessageBox.Show(e.Message + " " + tmpPath);
                         }
 
                         
@@ -861,9 +894,12 @@ namespace HtmlToPdfLib
                     }
                     else
                     {
-                        HtmlNode pNode = doc.CreateElement("p");
+                        if (showDebugImgFlag)
+                        {
+                            HtmlNode pNode = doc.CreateElement("p");
                         pNode.InnerHtml = "no Img";
                         htmlNode.ParentNode.ReplaceChild(pNode, htmlNode);
+                        }
                     }
 
                     
@@ -906,7 +942,9 @@ namespace HtmlToPdfLib
                     }
                 }
             }
+            #endregion
 
+            #region icons, picture-text => column_icon
             HtmlNodeCollection nodeCollectionIcon = doc.DocumentNode.SelectNodes("//img[@class='icon']");
             HtmlNodeCollection nodeCollectionPictext = doc.DocumentNode.SelectNodes("//img[@class='picture-text']");
             if(nodeCollectionIcon != null)
@@ -923,8 +961,10 @@ namespace HtmlToPdfLib
                     prepareIconColumn(node);
                 }
             }
+            #endregion
 
-            SaveHTML(doc, Path.GetFileName(htmlPath));//debug save fixed html
+            if (debugSaveHTMLFlag)
+                SaveHTML(doc, Path.GetFileName(htmlPath));//debug save fixed html
 
             var tmpHtml =  PrepareTidyHtml(doc.DocumentNode.OuterHtml);
 
@@ -1049,14 +1089,15 @@ namespace HtmlToPdfLib
                 {
                     int heightImg;
                     int widthImg;
-                    int minLimit = 600;
+                    int minLimitWidth = 600;
+                    int minLimitHeight = 540;
                     using (System.Drawing.Image img = System.Drawing.Image.FromFile(tmpPath))//.Drawing.Image objImage = System.Drawing.Image.FromFile(FileName))
                     {
                         widthImg = img.Width;
                         heightImg = img.Height;
                     }
 
-                    if ((widthImg < minLimit) && (heightImg < minLimit))
+                    if ((widthImg < minLimitWidth) && (heightImg < minLimitHeight))
                     {
                         imgNode.SetAttributeValue("class", "ui-chapter-picture_abc-standart");
                     }
@@ -1074,7 +1115,8 @@ namespace HtmlToPdfLib
                 }
                 catch(Exception e)
                 {
-                    MessageBox.Show(e.Message + " " + tmpPath);
+                    if (showDebugImgFlag)
+                        MessageBox.Show(e.Message + " " + tmpPath);
                 }
 
 

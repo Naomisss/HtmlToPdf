@@ -75,7 +75,7 @@ p
 
 p, li
 {
-	margin: 2px 0;
+	margin: 1px 0;
 	line-height: 1.5;
 }
 
@@ -170,12 +170,13 @@ u
 
 table
 {
-	width: 100%;
-	margin-top: 10px;
+	/*width: 100%;*/
+	width: 600px;
+	margin-top: 5px;
 	margin-bottom: 5px;
 	border-collapse: collapse;
-}
 
+}
 
 tr, td
 {
@@ -190,6 +191,8 @@ tr, td
 	padding: 10px;
 	color: #000000;
 	font-weight: bold;
+	
+	
 }
 
 .docTable th
@@ -200,6 +203,7 @@ tr, td
 	text-align: center;
 	text-weight: bold;
 	
+	table-layout:fixed;
 	white-space: nowrap;
 }
 
@@ -211,16 +215,18 @@ tr, td
 	text-align: center;
 	display: block;
 	text-weight: bold;
+	
 }
 
 
 .docTable tr:first-child th, .docTable tr:first-child td
 {
 	border-top: #9f9f97 solid 1px;
+	
 }
 
 
-.docTable td p
+.docTable td p, .docTable td li
 {
 	
 	text-indent: 0;
@@ -230,6 +236,7 @@ tr, td
 	text-align: left;
 	/*display: block;*/
 	font-weight: inherit;
+	
 }
 
 
@@ -245,6 +252,8 @@ tr, td
 	padding: 0;
 	margin: 0;
 	text-indent: 0;
+	
+	/**/white-space: nowrap;
 }
 
 
@@ -562,12 +571,13 @@ div.abc-picture
 .ui-chapter-picture_abc-portrait
 {
 	width:auto;
-	height:580px;
+	height:540px;
 }
 
 /* Стиль для изображений с разрешением меньше ширины и/или высоты 600 px */
 .ui-chapter-picture_abc-standart
 {
+
 }
 
 
